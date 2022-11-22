@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'popping', sans-serif;
+}
+
+:root {
+    --darkblue: #133b4e;
+    --lighterblue: #287396;
+    --lightblue: #1e5874;
+    --lightestblue: #489cc4;
+}
+
+
+body, html {
+    background: url('/paginas/pagina-ingles/imagens/fundo/fundo-formulario.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    background: url('/paginas/pagina-ingles/imagens/fundo/background-en.png') no-repeat  right center;
+    background-size: cover;
+    width: 55%;
+    max-width: 500px;
+    padding: 30px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+
+section h1 {
+    color: white;
+    margin-bottom: 40px; 
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+/*section  h1::after {
+    content: '';
+    width: 150px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 3px;
+}*/
+
+.campo {
+    background-color: #eaeaead0;
+    margin: 15px 0 2px 0;
+   display: flex;
+   
+   border-radius: 3px;
+}
+
+input {
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 13px 15px;
+    color: rgba(0, 0, 0, 0.849);
+    border-radius: 3px;
+}
+span {
+    font-size: 12px;
+    display: none;
+    color: #eaeaea;
+}
+
+/*label {
+    color: white;
+    letter-spacing: 1.2px;
+}
+#nome {
+    color: white;
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 2px dashed #fff;
+}
+
+#apelido {
+    color: white;
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 2px dashed #fff;
+}
+
+#email {
+    color: white;
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 2px dashed #fff;
+}
+
+#senha {
+    color: white;
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 2px dashed #fff;
+}*/
+
+.button {
+    text-align: center;
+}
+
+.sex-select {
+    display: flex;
+
+}
+
+.button input {
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.411);
+    
+    padding: 13px 20px;
+    letter-spacing: 1.5px;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.button input:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+    transition: 500ms;
+}

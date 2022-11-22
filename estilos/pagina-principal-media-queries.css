@@ -1,0 +1,76 @@
+@media screen and (min-width: 1024px) {
+
+    nav {
+        padding: 15px 15px;
+        
+    }
+
+    menu {
+        background-color: #eaeaea;
+    
+        position: relative;
+        top: 0vh;
+        display: flex;
+        height: 0;
+        width: 50%;
+        justify-content: space-around;
+        flex-direction: row;
+    
+        transform: translateX(0);
+        transition: 700ms ease;
+    }
+
+    menu h1 {
+        display: none;
+    }
+    .menu-list {
+        display: flex;
+    }
+
+    .menu-list li {
+        
+        margin-left: 20px;
+
+    }
+
+    .menu-list li a {
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+        text-shadow: none;
+    }
+    .menu-button {
+        display: none;
+    }
+
+    /* -----------SUBHEADER--------- */
+
+    .subheader .slogan {
+        position: relative;
+        left: 25%;
+        top: 40px;
+    }
+
+    .subheader .slogan .span01 {
+        font-size: 3em;
+        
+    }
+    
+    .subheader .slogan .span02 {
+        font-size: 8em;
+    }
+
+    /*-------------CARDS--------*/
+
+    .cards ul {
+        flex-direction: row;
+    }
+
+    .cards ul li {
+        width: 180px;
+        height: 100px;
+        
+    }
+
+}

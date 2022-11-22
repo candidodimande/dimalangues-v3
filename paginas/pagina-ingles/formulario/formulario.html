@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/paginas/pagina-ingles/formulario/estilos/formulario.css">
+    <link rel="stylesheet" href="/paginas/pagina-ingles/formulario/estilos/media-queries-formulario.css">
+</head>
+<body>
+    <section>
+        <div class="transparent">
+            <div class="formulario">
+                <h1>Cadastro</h1>
+                <form action="formulario.php" id="form">
+                    <div class="campo">
+                        <label for="nome"></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" class="required" oninput="nameValidate()">
+                    </div>
+                    <span class="span-required">Campo vazio</span>
+                    <div class="campo">
+                        <label for="apelido"></label>
+                         <input type="text" name="apelido" id="apelido" placeholder="Apelido" class="required" oninput="apelidoValidate()">
+                    </div>
+                    <span class="span-required">Campo vazio</span>
+                    <div class="campo" >
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="required" oninput="emailValidate()">
+                    </div>
+                    <span class="span-required">Email não válido</span>
+                    <div class="campo">
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" class="required"  oninput="senhaValidate()">
+                    </div>
+                    <span class="span-required">A senha tem de ter no mínimo 8 caracteres</span>
+                    <div class="campo">
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite novamente a senha" class="required" oninput="campareSenha()">
+                    </div>
+                    <span class="span-required">As senhas devem ser compatíveis</span>
+                    <h2>Sexo:</h2>
+                    <div class="sex-select">
+                        <div>
+                            <input type="radio" name="masculino" id="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="femenino" id="femenino">
+                            <label for="masculino">Femenino</label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Cadastrar-se">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const form = document.getElementById('form')
+    const campos = document.querySelectorAll('.required')
+    const spans = document.querySelectorAll('.span-required')
+    const emailRegex = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        oninput=nameValidate();
+        oninput=apelidoValidate();
+        emailValidate();
+        senhaValidate();
+        campareSenha();
+    })
+
+    function setError(index) {
+         campos[index].style.border = '3px solid red'
+         spans[index].style.display = 'block'
+    } 
+
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none'
+    }
+
+    function nameValidate() {
+        if (campos[0].value.length == 0) {
+            setError(0)
+        } 
+        else {
+            removeError(0)
+        }
+    }
+
+    function apelidoValidate() {
+        if (campos[1].value.length == 0) {
+            setError(1)
+        } 
+        else {
+            removeError(1)
+        }
+    }
+
+    function emailValidate() {
+        if (!emailRegex.test(campos[2].value)) {
+            setError(2);
+        } 
+        else {
+            removeError(2);
+        }
+    }
+
+    function senhaValidate() {
+        if (campos[3].value.length < 8) {
+            setError(3);
+        } 
+        else {
+            removeError(3);
+            campareSenha();
+        } 
+    }
+
+    function campareSenha() {
+        if (campos[3].value == campos[4].value && campos[4].value.length >= 8){
+            removeError(4);
+        } 
+        else {
+            setError(4);
+        }
+    }
+</script>
+</html>
