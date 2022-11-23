@@ -25,7 +25,6 @@
                
     
                 <menu class="active-menu">
-                    <h1>Dimalangues</h1>
                     <ul class="menu-list">
                         <li><a href="">Home</a></li>
                         <li><a href="">Lições</a></li>
@@ -35,6 +34,15 @@
                         <li><a href="">Sobre nós</a></li>
                         <li id="login"><a href="">Login</a></li>
                     </ul>
+                    <div class="notification">
+                        <p>Subscreva-se para receber notifições <br> acerca dos nossos cursos</p>
+                        <form action="">
+                            <div class="campo-email">
+                                <input type="email" name="email" id="email" placeholder="Email" required size="10">
+                                <input type="submit" value="Subscrever" id="button" size="">
+                            </div>
+                        </form>
+                    </div>
                 </menu>
             </nav>
     </header>
@@ -56,86 +64,76 @@
         <section class="cards">
             <ul>
                 <li class="imagem01">
-                <div class="fundo-transparente">
-                    <a href="">
+                    <div class="fundo-transparente">
                         <img src="imagens/cards/inglês.png" alt="imagen01">
-                    </a>
-                    <div class="texto">
-                        <p><a href="paginas/pagina-ingles/ingles.html">Abrir</a></p>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>
-                </div>
                 
                 </li>
                 
                 <li class="imagem02">
                     <div class="fundo-transparente">
-                    <a href="">
                         <img src="imagens/cards/francês.png" alt="imagem02">
-                    </a>
-                    <div class="texto">
-                        <p><a href="Abrir">Abrir</a></p>
-                    </div>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>
                 </li>
                 <li class="imagem03">
                     <div class="fundo-transparente">
-                    <a href="">
                         <img src="imagens/cards/espanhol.png" alt="imagem03">
-                    </a>
-                    <div class="texto">
-                        <p><a href="Abrir">Abrir</a></p>
-                    </div>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>
                 </li>
             </ul>
         </section>
         
         <aside>
-            <p>Queres aperfeiçoar o idioma que está a aprender com nativos?</p>
-            <p>Clicar em <strong>Aperfeiçoar</strong> e encontre alguem para conversar. </p>
-            <p class="link-form"><a href="formulario/index.html">Aperfeiçoar</a></p>
+            <div class="aside-overlay">
+                <div class="aside-paragraph">
+                    <p>Queres aperfeiçoar o idioma que está a aprender com nativos?</p>
+                    <p>Clicar em <strong>Aperfeiçoar</strong> e encontre alguem para conversar. </p>
+                    <p class="link-form"><a href="formulario/index.html">Aperfeiçoar</a></p>
+                </div>
+            </div>
         </aside>
             
         <section class="cards">
             <ul>        
                 <li class="imagem04">
                     <div class="fundo-transparente">
-                    <a href="">
                         <img src="imagens/cards/b-english.png" alt="imagem04">
-                    </a>
-                    <div class="texto">
-                        <p><a href="Abrir">Abrir</a></p>
-                    </div>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>   
                 </li>
                 <li class="imagem05">
                     <div class="fundo-transparente">
-                    <a href="">
                         <img src="imagens/cards/chinês.png" alt="imagem05">
-                    </a>
-                    <div class="texto">
-                        <p><a href="Abrir">Abrir</a></p>
-                    </div>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>
                 </li>
                 <li class="imagem06">
                     <div class="fundo-transparente">
-                    <a href="">
                         <img src="imagens/cards/português.png" alt="imagem06">
-                    </a>
-                    <div class="texto">
-                        <p><a href="Abrir">Abrir</a></p>
-                    </div>
+                        <button type="button" class="btn-acess">Acessar</button>
+                        <div class="overlay"></div>
                     </div>
                 </li>
             </ul>
         </section>
 
         <!--ENDERECO-->
-        <article class="redes-sociais">
-            <div class="transparente-rs">
-                <div class="paragrafo_adress-list">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ad at praesentium unde! Reprehenderit deleniti provident itaque nobis dolorum hic id maxime iure quo, aliquid eaque autem, voluptatibus ex.</p>
+                <div class="notification-footer">
+                    <p>Subscreva-se para receber notifições acerca dos nossos cursos.</p>
+                    <form action="">
+                        <div class="campo-email">
+                            <input type="email" name="email" id="email" placeholder="Email" required><input type="submit" value="Subscrever" id="button">
+                        </div>
+                    </form>
+                </div>
                     <ul>
                         <li class="endereco">Endereço:</li>
                             <ul id="address-list">
@@ -145,7 +143,6 @@
                                 <li>Email: info@dimalangues.co.mz</li>
                             </ul>
                     </ul>
-                </div>
                 
                         <a href=""><img width="45" src="imagens/icon/fb.png" alt="logo"></a>
                         <a href=""><img width="45" src="imagens/icon/instagram.png" alt="logo"></a>
