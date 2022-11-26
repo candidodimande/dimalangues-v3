@@ -21,16 +21,12 @@
 
 
 html, body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow-x: hidden;
     background-color: white;
 }
 
-main {
-    height: 100%;
-   
-}
 
 /*.map {
     position: absolute;
@@ -48,7 +44,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
     overflow-x: hidden;
     padding: 5px 30px;
 }
@@ -66,8 +61,8 @@ main {
 }
 
 menu {
-    background-color: white;
-    height: 0;
+    
+    
     transition: 700ms ease;
     
 }
@@ -86,7 +81,7 @@ menu {
     color: var(--darkblue);
     
     
-}
+} 
 
 #login a {
     background-color: red;
@@ -97,14 +92,20 @@ menu {
 }
 
 
-
+header {
+    background-image: url('../imagens/fundo/background-en.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 .subheader {
-    background: url('../imagens/fundo/fundo-formulario.png') no-repeat right center;
-    background-size: cover;
+    
+    
 }
 
 .black-backgorund {
-    background-color: rgba(0, 0, 0, 0.151);
+    
+    
 }
 
 .slogan {
@@ -131,12 +132,12 @@ menu {
     
 }
 
-.black-backgorund .cadastre {
+ .cadastre {
     padding: 30px 30px;
     
 }
 
-.black-backgorund .cadastre a {
+.cadastre a {
     color: #fff;
     border: 3px solid #133b4e;
     padding: 10px;

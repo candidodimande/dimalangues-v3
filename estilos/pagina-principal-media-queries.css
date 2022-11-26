@@ -1,5 +1,9 @@
 @media screen and (min-width: 1024px) {
 
+    header {
+        background-position: right;
+    }
+
     nav {
         padding: 8px 0px;
         
@@ -33,7 +37,7 @@
     }
 
     .menu-list li a {
-       padding: 0;
+       padding-top: 0;
         font-size: 16px;
         font-weight: lighter;
         text-shadow: none;
@@ -78,5 +82,63 @@
         height: 100px;
         
     }
+
+    .aside-paragraph {
+        min-width: 600px;
+         padding: 10px 0;
+     }
+
+    .aside-paragraph::after {
+        width: 200px;
+    }
+
+    .aside-paragraph::before {
+        width: 200px;
+    }
+
+    .notification-form {
+        min-width: 600px;
+     }
+
+    .notification-form::after {
+        width: 200px;
+     }
+
+
+    .notification-form::before {
+        width: 200px;
+     }
+
+     .form {
+        height: 150px;
+       
+     }
+
+    form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      
+    }
+
+    form input {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    #button {
+        width: 100px;
+    }
+
+    .display-flexnotification-form-and-address {
+        display: flex;
+        margin-right: 70px;
+        
+
+     }
+
+    .social-icons {
+        padding-top: 50px;
+     }
 
 }
