@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de línguas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/pagina-principal-media-queries.css">
+</head>
+<body  onload="carregar()">
+    <header>
+        
+            <nav>
+                
+               
+                    <div class="logo">
+                        <h1>Dimalangues</h1>
+                    </div>
+                    <div class="menu-button">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+               
+    
+                <menu class="active-menu">
+                    <div id="msg-menu"></div>
+                    <ul class="menu-list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Lições</a></li>
+                        <li><a href="">Dicas</a></li>
+                        <li><a href="">IPA</a></li>
+                        <li><a href="">Fale conosco</a></li>
+                        <li><a href="">Sobre nós</a></li>
+                        <li id="login"><a href="">Login</a></li>
+                    </ul>
+
+                    <div class="notification">
+                        <p>Subscreva-se para receber notifições <br> acerca dos nossos cursos</p>
+                        <form action="">
+                            <div class="campo-email">
+                                <input type="email" name="email" id="email" placeholder="Email" required size="10">
+                                <input type="submit" value="Subscrever" id="button" size="">
+                            </div>
+                        </form>
+                    </div>
+                </menu>
+            </nav>
+            <div class="row">
+               <div class="col">
+                   <h2>Ensinar é a nossa maior <strong>Paixão.</strong></h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, provident perferendis, enim rem nam iusto explicabo eius reprehenderit quisquam itaque magnam ducimus sapiente, repellat aspernatur temporibus? Sequi quaerat nihil vero.</p>
+                   <button type="button">Cadastre-se</button>
+               </div>
+
+               <div id="msg">
+                  
+               </div>
+            </div>   
+    </header>
+    <main>
+        <section>
+            <div class="card-01">
+                <div class="img-1">
+                    <img src="imagens/cards/inglês.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                    
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="card-02">
+                <div class="img-1">
+                    <img src="imagens/cards/b-english.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="card-03">
+                <div class="img-1">
+                    <img src="imagens/cards/espanhol.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+            <div class="card-04">
+                <div class="img-1">
+                    <img src="imagens/cards/francês.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+            <div class="card-05">
+                <div class="img-1">
+                    <img src="imagens/cards/chinês.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+            <div class="card-06">
+                <div class="img-1">
+                    <img src="imagens/cards/português.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis placeat, asperiores quidem similique corrupti at commodi ipsam deserunt error sed, hic incidunt natus architecto reprehenderit debitis expedita numquam! Ab.</p>
+                </div>
+                <a href="" class="btn-acess" >Abrir</a>
+                <div class="overlay"></div>
+            </div>
+        </section>
+   </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p id="logo-name">&copy; Dimalangues - 2022</p>
+        <p>copyright - Todos os direitos reservados</p>
+        <p>desenvolvido por:</p>
+        <p><strong><a href="https://github.com/candidodimande" target="_blank"><strong id="blue">CAD</strong>TECH</a></strong></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/scrollreveal.js"></script>
+    <script src="scripts/tamanho.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

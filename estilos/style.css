@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+:root {
+    --cor0: #1A5C37;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #355C47;
+    --cor4: #2FA866;
+    --cor5: #063d1e; 
+}
+
+
+html, body {
+    max-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+header {
+    background-color: #eaeaea;
+    background-image: url('../imagens/fundo/Screenshot.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    border-radius: 0 0 50px 50px;
+}
+
+.logo h1 {
+    letter-spacing: 1.5px;
+    color: #063d1e;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+/*----------------------MENU----------------------*/
+
+nav {
+    background-image: url('../imagens/fundo/Screenshot\ 1.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-button div {
+    width: 32px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.603);
+
+}
+
+menu {
+    background-image: url('../imagens/fundo/Screenshot.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: -1;
+   font-weight: lighter;
+    transform: translateX(-100%);
+    transition: 700ms ease;
+}
+
+.menu-list {
+    min-width: 100%;   
+}
+
+.menu-list li {
+    letter-spacing: 3px;
+    
+}
+
+.menu-list li a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    font-weight: lighter;
+    opacity: .7;
+}
+
+.menu-list li a:hover {
+    text-decoration: underline;
+}
+
+.notification {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+}
+
+.notification p {
+    color: white;
+    opacity: .7;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+#button {
+    background-color: #1A5C37;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+/* -------------------------ROW----------------------- */
+
+.row {
+    height: 88%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 10%; 
+}
+
+.row h2 {
+    margin-top: 20px;
+    font-size: 35px;
+    color: white;
+    opacity: .7;
+    font-style: italic;
+}
+
+.row h2 strong {
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5em;
+}
+
+.row p {
+    color: white;
+    text-align: justify;
+    margin: 40px 0;
+}
+.row button {
+    width: 180px;
+    padding: 12px 0;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #063d1e;
+    background: none;
+    color: #2FA866;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.col {
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.col img {
+    border-radius: 150px;
+    width: 200px;
+}
+
+#msg-menu {
+    font-size: 2em;
+    /* width: 100%; */
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-basis: 100%;
+    z-index: -1;
+    opacity: .2;
+}
+
+#msg {
+    color: white;
+    position: relative;
+    left: 20%;
+    padding: 4%;
+    font-style: italic;
+    opacity: .3;
+    text-align: center;
+}
+
+/*--------------------------MAIN------------------------*/
+
+main {
+    height: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 60px;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-01 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-en.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card-02 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-b-english.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card-03 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-fr.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card-04 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-esp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card-05 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-ch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card-06 {
+    border: 3px solid #eaeaea;
+    border-radius: 3px;
+    position: relative;
+    transition: 500ms ease;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/fundo/fundo-pt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0  10px 10px rgba(0, 0, 0, 0.781);
+}
+
+.card01:hover {
+    
+}
+
+.card01 .img-1 {
+    
+    
+}
+
+.img-1 img {
+    width: 100%;
+    padding: 20px;
+    opacity: .5;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    padding: 10px;
+    width: 300px;
+    opacity: .5;
+    letter-spacing: 2px;
+}
+.btn-acess {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #063d1eef;
+    letter-spacing: 2px;
+    border-top: 4px solid ;
+    border-bottom: 4px solid ;
+    background-color:  #000f0f;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    transition: .6s ease;
+    opacity: 0;
+    z-index: 1;
+    font-size: 30px;
+    text-shadow: 0 2px 3px black;
+}
+
+/* .btn-acess::after {
+    content: '';
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.btn-acess::before {
+    content: '';
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    z-index: -1;
+} */
+
+.card-01:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-01:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.card-02:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-02:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.card-03:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-03:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.card-04:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-04:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.card-05:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-05:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.card-06:hover .btn-acess {
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    opacity: 1;
+    transition: 500ms ease;
+}
+.card-06:hover .overlay {
+    transition: 500ms ease;
+    transform: scaleX(1);
+    opacity: .5;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .5;
+    transition: 500ms ease;
+    transform: scaleX(0);
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    padding-bottom: 2px;
+    color: #000f0f;
+}
+
+footer a {
+    color: white;
+    text-shadow:  0px 2px 2px black;
+    font-size: 20px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#blue {
+    color: #133b4e;
+    font-weight: bolder;
+}
+
+#logo-name {
+    border-top: 2px solid #063d1e;
+    padding: 20px;
+    font-variant: small-caps;
+}
+
+/*SCRIPTS*/
+
+.show-menu {
+    transform: translateX(0);
+    transition: 700ms ease;
+}
+
+.line1-rotation {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.line2-opacity{
+    opacity: 0;
+}
+
+.line3-rotation {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
