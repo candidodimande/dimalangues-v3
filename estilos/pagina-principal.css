@@ -21,10 +21,10 @@
 
 
 html, body {
-    min-height: 100vh;
+    max-height: 100%;
     width: 100vw;
     overflow-x: hidden;
-    background-color: white;
+    
 }
 
 header {
@@ -40,9 +40,8 @@ header {
     color: #063d1e;
     font-weight: normal;
     font-variant: small-caps;
-    
 }
-/*-----------------------------------------------------MENU-----------------------------------------------*/
+/*----------------------MENU----------------------*/
 
 nav {
     background-image: url('../imagens/fundo/Screenshot\ 1.png');
@@ -74,18 +73,19 @@ nav {
 }
 
 menu {
-    background-image: url('../imagens/fundo/Screenshot\ \(18\).png');
+    /* background-image: url('../imagens/fundo/Screenshot\ \(18\).png');
     background-size: cover;
     background-position: left;
-    background-repeat: no-repeat;
-    opacity: ;
+    background-repeat: no-repeat; */
+    background: black;
     position: absolute;
-    top: 6vh;
+    top: 0vh;
     left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
-    
+    padding-top: 50px;
+    z-index: -1;
     
     transform: translateX(-100%);
     transition: 700ms ease;
@@ -140,38 +140,37 @@ input {
 #button {
     background-color: #1A5C37;
     color: white;
-    
+    text-align: center;
+    display: inline-block;
 }
 
 /* -------------------------ROW----------------------- */
 
 .row {
-    display: flex;
-    flex-direction: column;
     height: 88%;
-    align-items: center;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 10%; 
 }
 
 .row h2 {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 35px;
     color: white;
     opacity: .7;
     font-style: italic;
 }
 
 .row h2 strong {
-    opacity: ;
     font-weight: bolder;
-   color: white;
+    color: white;
+    font-size: 1.5em;
 }
 
 .row p {
     color: white;
-    padding: 15px 0;
-    
+    text-align: justify;
+    margin: 40px 0;
 }
 .row button {
     width: 180px;
@@ -192,7 +191,15 @@ input {
     width: 200px;
 }
 
-
+#msg {
+    color: white;
+    position: relative;
+    left: 20%;
+    padding: 4%;
+    font-style: italic;
+    opacity: .3;
+    text-align: center;
+}
 
 /*--------------------------MAIN------------------------*/
 
@@ -201,6 +208,7 @@ main {
     background-color: white;
     
 }
+
 /*-----------------------CARDS-----------------------------CARDS--------------------------------------CARDS-----------------*/
 .cards {
     margin-top: 70px; 
@@ -310,7 +318,7 @@ aside {
     width: 100%;
     max-width: 270px;
     margin: 0 auto;
-    background-color: white;
+    
    position: relative;
    z-index: 0;
 }
@@ -494,6 +502,7 @@ input {
 .social-icons a img {
     width: 23px;
 }
+
 footer {
     background-color: white;
     text-align: center;
